@@ -34,6 +34,7 @@ if($currentPrincipal.IsInRole([Security.Principal.WindowsBuiltInRole]::Administr
 	$reopen = $true;
 }
 if($reopen){
+	write-host '** IMPORTANT-.'
 	write-host '** This script needs to run with admin privileges, and outside of the ISE.'
 	write-host '** The Badger will relaunch this script after you hit Enter, below.'
 	write-host '** When you do so, you will be prompted by Windows User-Account-Control'
